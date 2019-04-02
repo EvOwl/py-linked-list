@@ -1,2 +1,2 @@
-# PyLinkedList
+# Python Linked List
 

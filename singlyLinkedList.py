@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
-
-# Structure:
-#                                    Linked List
+#                                Singly Linked List
 #   _____________________________________/ \___________________________________
 #  /                                                                           \
 #   +--------/ node0 \-+    +--------/ node1 \-+           +--------/ nodeN \-+
 #   +------------------+    +------------------+           +------------------+
 #   | value: value     |    | value: value     |           | value: value     |
-#   | next_node: next1 | => | next_node: node2 | => ... => | next_node: nodeN |
+#   | next_node: next1 | => | next_node: nodeN | => ... => | next_node: None  |
 #   +------------------+    +------------------+           +------------------+
 #
 

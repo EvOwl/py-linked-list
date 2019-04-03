@@ -1,3 +1,15 @@
+# -*- coding: utf-8 -*-
+#                                Doubly Linked List
+#   _____________________________________/ \___________________________________
+#  /                                                                           \
+#   +--------/ node0 \-+    +--------/ node1 \-+           +--------/ nodeN \-+
+#   +------------------+    +------------------+           +------------------+
+#   | value: value     |    | value: value     |           | value: value     |
+#   | next_node: next1 | => | next_node: nodeN | => ... => | next_node: None  |
+#   | prev_node: None  | <= | prev_node: node0 | <= ... <= | prev_node: node1 |
+#   +------------------+    +------------------+           +------------------+
+#
+
 class ListNode:
     def __init__(self, value=None, next_node=None, previous_node=None):
         self.value = value

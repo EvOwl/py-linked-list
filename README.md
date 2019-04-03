@@ -8,7 +8,7 @@ Tasks:
 - [ ] Create doubly linked list
 - [ ] Create doubly linked looped list
 
-Structure:
+Structure Singly linked List:
 
 Node0 | Node1 | => | Node N
 ------|-------|-----|-------

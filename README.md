@@ -10,8 +10,8 @@ Tasks:
 
 Structure Singly linked List:
 
-Node0 | Node1 | => | Node N
-------|-------|-----|-------
-value | value | ... | value
-next_node: node1 | next_node: nodeN | ... | next_node: None
+Node0 | Node1 | Node2 | => | Node N
+------|-------|-------|----|-------
+value: value | value: value | value: value | ... | value: value
+next_node: Node1 | next_node: Node2 | next_node: NodeN | ... | next_node: None
 

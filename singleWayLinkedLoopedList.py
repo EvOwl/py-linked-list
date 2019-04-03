@@ -38,6 +38,7 @@ class LinkedLoopedList:
         return count
 
 
+# Testing Code:
 L = LinkedLoopedList()
 L.add('Node 0')
 a = L.get_root_list()
@@ -48,4 +49,3 @@ L.add('Node 4')
 print(L.size())
 L.remove(a)
 print(L.size())
-print('Fin')

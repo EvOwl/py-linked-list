@@ -4,7 +4,7 @@ Example of single and double way linked list in Python 3+
 
 Tasks:
 - [X] Create single way linked list
-- [ ] Create single way linked looped list
+- [X] Create single way linked looped list
 - [ ] Create double way linked list
 - [ ] Create double way linked looped list
 

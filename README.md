@@ -14,4 +14,4 @@ Node0 | Node1 | Node2 | => | Node N
 ------|-------|-------|----|-------
 value: value | value: value | value: value | ... | value: value
 next_node: Node1 | next_node: Node2 | next_node: NodeN | ... | next_node: None
-Head list | | | | Tail List
+_head list_ | | | | _tail List_

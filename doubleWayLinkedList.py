@@ -1,36 +1,41 @@
 # -*- coding: utf-8 -*-
-from listNode import ListNode
+from doubleListNode import DoubleListNode
 
 
-# TODO not working
 class LinkedList:
     def __init__(self):
-        self.head_list = None
-        self.tail_list = None
+        self._head_node = None
+        self._tail_node = None
+
+    def get_head_list(self):
+        return self._head_node
+
+    def get_tail_list(self):
+        return self._tail_node
 
     def add_node_head(self, value):
-        temp = ListNode(value)
-        if self.head_list is None:
+        temp = DoubleListNode(value)
+        if self._head_node is None:
             temp.set_next_node(temp)
-            self.tail_list = temp
+            self._tail_node = temp
         else:
-            self.head_list.set_next_node(temp)
-            temp.set_previous_node(self.head_list)
-        self.head_list = temp
+            self._head_node.set_next_node(temp)
+            temp.set_prev_node(self._head_node)
+        self._head_node = temp
 
     def add_node_tail(self, value):
-        temp = ListNode(value)
-        if self.tail_list is None:
-            temp.set_previous_node(temp)
-            self.head_list = temp
+        temp = DoubleListNode(value)
+        if self._tail_node is None:
+            temp.set_prev_node(temp)
+            self._head_node = temp
         else:
-            self.tail_list.set_previous_node(temp)
-            temp.set_next_node(self.tail_list)
-        self.tail_list = temp
+            self._tail_node.set_prev_node(temp)
+            temp.set_next_node(self._tail_node)
+        self._tail_node = temp
 
     def size(self):
-        if self.tail_list is not None and self.head_list is not None:
-            current_node = self.tail_list
+        if self._tail_node is not None and self._head_node is not None:
+            current_node = self._tail_node
             count_node = 0
             while current_node is not None:
                 count_node = count_node + 1
@@ -39,38 +44,3 @@ class LinkedList:
             count_node = 'Linked List is empty'
         return count_node
 
-
-# ==== Proof zone ====
-L = LinkedList()
-L.add_node_head('Node 1')
-L.add_node_tail(44440)
-L.add_node_head(20002)
-L.add_node_tail(55550)
-L.add_node_head(30003)
-L.add_node_tail(66660)
-
-
-def get_id_node(node):
-    if node.get_previous_node() is None:
-        _prev_node = 'no_object_links'
-    else:
-        _prev_node = str(id(node.get_previous_node()))
-    _current_node = str(id(node))
-    if node.get_next_node() is None:
-        _next_node = 'no_object_links'
-    else:
-        _next_node = str(id(node.get_next_node()))
-    return _prev_node, _current_node, _next_node
-
-
-current_node = L.tail_list
-print('+-------------- Proof: Objects ID list -------------------+')
-print('| Previous: \t\t| Current: \t\t\t| Next:           |')
-while current_node is not None:
-    get_id_node(current_node)
-    prev_node, current, next_node = get_id_node(current_node)
-    print('| ' + prev_node + '\t| ' + current + '\t| ' + next_node + ' |')
-    current_node = current_node.get_next_node()
-
-print('+-------------------+-------------------+-----------------+')
-print('List size: ' + str(L.size()))

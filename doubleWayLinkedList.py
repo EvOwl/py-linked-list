@@ -1,45 +1,8 @@
 # -*- coding: utf-8 -*-
-#                                Doubly Linked List
-#   _____________________________________/ \___________________________________
-#  /                                                                           \
-#   +--------/ node0 \-+    +--------/ node1 \-+           +--------/ nodeN \-+
-#   +------------------+    +------------------+           +------------------+
-#   | value: value     |    | value: value     |           | value: value     |
-#   | next_node: next1 | => | next_node: nodeN | => ... => | next_node: None  |
-#   | prev_node: None  | <= | prev_node: node0 | <= ... <= | prev_node: node1 |
-#   +------------------+    +------------------+           +------------------+
-#
-
-class ListNode:
-    def __init__(self, value=None, next_node=None, previous_node=None):
-        self.value = value
-        self.next_node = next_node
-        self.previous_node = previous_node
-
-    def get_value(self):
-        return self.value
-
-    def get_next_node(self):
-        return self.next_node
-
-    def get_previous_node(self):
-        return self.previous_node
-
-    def set_previous_node(self, new_previous_node):
-        self.previous_node = new_previous_node
-
-    def set_value(self, new_value):
-        self.value = new_value
-
-    def set_next_node(self, new_next_node):
-        self.next_node = new_next_node
+from listNode import ListNode
 
 
-class LinkedListSingle:
-    def __init__(self):
-        pass
-
-
+# TODO not working
 class LinkedList:
     def __init__(self):
         self.head_list = None

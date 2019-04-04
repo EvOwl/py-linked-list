@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from doubleListNode import DoubleListNode
+from listNode import DoubleListNode
 
 
 class LinkedList:

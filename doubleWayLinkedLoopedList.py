@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from doubleListNode import DoubleListNode
+from listNode import DoubleListNode
 
 
 class DoubleLinkedLoopedList:
@@ -10,6 +10,7 @@ class DoubleLinkedLoopedList:
         return self._root_node
 
     def add(self, value):
+        tmp_node = DoubleListNode()
         pass
 
     def remove(self, node):

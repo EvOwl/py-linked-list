@@ -18,3 +18,15 @@ class ListNode:
     def set_next_node(self, new_next_node):
         self._next_node = new_next_node
 
+
+class DoubleListNode(ListNode):
+    def __init__(self, value=None, next_node=None, prev_node=None):
+        super().__init__(value, next_node)
+        self._prev_node = prev_node
+
+    def get_prev_node(self):
+        return self._prev_node
+
+    def set_prev_node(self, node):
+        self._prev_node = node
+

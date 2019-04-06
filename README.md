@@ -8,10 +8,32 @@ Tasks:
 - [X] Create double way linked list
 - [ ] Create double way linked looped list
 
-### Structure Single way linked List:
+### Structure of Single way linked List:
 
-Node0 | Node1 | Node2 | => | Node N
-------|-------|-------|----|-------
-value: value | value: value | value: value | ... | value: value
-next_node: Node1 | next_node: Node2 | next_node: NodeN | ... | next_node: None
-_head list_ | | | | _tail list_
+node0 | node1 | node2 | node3 | <= | nodeN
+------|-------|-------|-------|----|------
+value: value | value: value | value: value | value: value | ... | value: value
+next_node: None | next_node: node0 | next_node: node1 | next_node: node2 | ... | next_node: node3
+
+### Structure of Single way lined List (looped):
+
+node0 | node1 | node2 | node3 | <= | nodeN
+------|-------|-------|-------|----|------
+value: value | value: value | value: value | value: value | ... | value: value
+next_node: nodeN | next_node: node0 | next_node: node1 | next_node: node2 | ... | next_node: node3
+
+### Structure of Double way linked list:
+
+node0 | node1 | node2 | node3 | <= | nodeN
+------|-------|-------|-------|----|------
+value: value | value: value | value: value | value: value | ... | value: value
+next_node: None | next_node: node0 | next_node: node1 | next_node: node2 | ... | next_node: node3
+prev_node: node1 | prev_node: node2 | prev_node: node3 | prev_node: nodeN | ... | prev_node: None
+
+### Structure of Double way linked list (looped):
+
+node0 | node1 | node2 | node3 | <= | nodeN
+------|-------|-------|-------|----|------
+value: value | value: value | value: value | value: value | ... | value: value
+next_node: nodeN | next_node: node0 | next_node: node1 | next_node: node2 | ... | next_node: node3
+prev_node: node1 | prev_node: node2 | prev_node: node3 | prev_node: nodeN | ... | prev_node: node0

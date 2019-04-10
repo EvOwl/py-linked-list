@@ -24,7 +24,7 @@ next_node: nodeN | next_node: node0 | next_node: node1 | next_node: node2 | ... 
 
 ### Structure of Double way linked list:
 
-node0 | node1 | node2 | node3 | <= | nodeN
+node0 | node1 | node2 | node3 | <=> | nodeN
 ------|-------|-------|-------|----|------
 value: value | value: value | value: value | value: value | ... | value: value
 next_node: None | next_node: node0 | next_node: node1 | next_node: node2 | ... | next_node: node3
@@ -32,7 +32,7 @@ prev_node: node1 | prev_node: node2 | prev_node: node3 | prev_node: nodeN | ... 
 
 ### Structure of Double way linked list (looped):
 
-node0 | node1 | node2 | node3 | <= | nodeN
+node0 | node1 | node2 | node3 | <=> | nodeN
 ------|-------|-------|-------|----|------
 value: value | value: value | value: value | value: value | ... | value: value
 next_node: nodeN | next_node: node0 | next_node: node1 | next_node: node2 | ... | next_node: node3

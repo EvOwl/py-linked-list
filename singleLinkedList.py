@@ -11,8 +11,6 @@ class _SingleLinkedList:
     def add(self, value):
         pass
 
-    # Gskhgdlfkjghdak; fghsl kfjg hdflkj hsf;lg kd
-    # sdgdfgd dfg sdfg dfg
 
     def find(self, node):
         if node is not self._head_node:

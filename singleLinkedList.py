@@ -11,6 +11,8 @@ class _SingleLinkedList:
     def add(self, value):
         pass
 
+    # Gskhgdlfkjghdak; fghsl kfjg hdflkj hsf;lg kd
+
     def find(self, node):
         if node is not self._head_node:
             current_node = self._head_node.get_next_node()
